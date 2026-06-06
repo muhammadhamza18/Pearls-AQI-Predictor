@@ -1,0 +1,50 @@
+# Environment variables (NEVER commit secrets!)
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+
+# Trained models (optional - don't need in git)
+trained_models/
+
+# Data files (optional - don't need in git)
+final_data/
+data/
+*.csv
+
+# OS
+.DS_Store
+Thumbs.db
+```
+
+---
+
+## 🔑 **Step 3: Add Secrets to GitHub**
+
+1. **Go to your GitHub repository**
+2. Click **Settings** (top right)
+3. Left sidebar → **Secrets and variables** → **Actions**
+4. Click **New repository secret**
+
+**Add Secret 1:**
+```
+Name:  HOPSWORKS_API_KEY
+Value: o4ON0hNP9EFs7lCy.vUKteKkiiS0Ud8csAPyieAOLLLDnigZ86XRTlVT237H5h8JhcvtDtMjgqj8ZasPA
+```
+
+**Add Secret 2:**
+```
+Name:  OPENWEATHER_API_KEY
+Value: 9dfaa9c3f4e58af2ff0837fa3e4c866b
